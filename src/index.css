@@ -59,7 +59,7 @@ nav h2 {
 overflow-wrap: break-word;
   word-wrap: break-word;
   hyphens: auto;
-  white-space: normal; //this is the one that gets you all the time
+  white-space: normal; 
 }
 
 section {
@@ -449,6 +449,6 @@ hr {
   z-index: +1000;
   padding: 10px;
   overflow: visible;
-  background: url('../dist/assets/price_tag.svg') no-repeat center;
+  background: url('./assets/price_tag.svg') no-repeat center;
   background-size: contain;
 }

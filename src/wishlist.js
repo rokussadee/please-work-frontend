@@ -100,16 +100,7 @@ async function getDiscogsWishlist(link_array) {
   return data.data
 }
 
-function dynamicCards(index) {
-  [...document.querySelectorAll(".album-block-container")].forEach(function(item) {
-    item.getAttribute("data-index") == index ? item.classList.replace("closed", "open") : item.classList.replace("open", "closed")
-  });
-};
-
 async function getUserId() {
-  const params = new URLSearchParams(window.location.search);
-  const token = params.get('access_token');
-
   let user_id = await instance({
     method: 'get',
     url: '/api/getUserId',
